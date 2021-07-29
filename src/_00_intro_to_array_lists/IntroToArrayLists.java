@@ -23,9 +23,22 @@ public class IntroToArrayLists {
 			System.out.println(s);
 		}
 		//5. Print only the even numbered elements in the list.
-		
+		for (int i = 0; i < animals.size (); i += 2) {
+			String s = animals.get (i);
+			System.out.println(s);
+		}
 		//6. Print all the Strings in reverse order.
-		
+		for (int i = 4; i >= 0; i --) {
+			String s = animals.get (i);
+			System.out.println(s);
+		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		for (int i = 0; i < animals.size(); i ++) {
+				String temp = animals.get (i);
+				if (temp.contains("e")) {
+					System.out.println(temp);
+				}
+		}
+		
 	}
 }
